@@ -1,0 +1,9 @@
+# Dockerfile,
+
+FROM python:3.12.2
+
+ADD index.py . 
+
+RUN pip install beautifulsoup4
+
+CMD ["python","./index.py"]
